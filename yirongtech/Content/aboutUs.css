@@ -1,0 +1,152 @@
+@media screen and (min-width: 768px) {
+    .lrCont {
+        width: 1200px;
+        margin: 0 auto;
+    }
+
+    .lrPhone {
+        width: 800px;
+        padding-left: 110px;
+    }
+
+    .lrfr {
+        width: 500px;
+    }
+
+    section.sectionCont {
+        width: 1200px;
+        margin: 0 auto;
+    }
+}
+
+h2,
+h3,
+p,
+ul,
+li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.lrsection {
+    color: #fff;
+    background: url("../images/aboutUs.png") no-repeat;
+    background-size: cover;
+    padding: 127px 0 50px;
+    height: 330px;
+    margin-bottom: 50px;
+}
+
+section.sectionCont {
+    margin-bottom: 80px;
+}
+
+.lrPhone h2 {
+    margin-bottom: 22px;
+    font-size: 46px;
+}
+
+.lrPhone p {
+    font-size: 20px;
+}
+
+.client > h2 {
+    text-align: center;
+    font-size: 26px;
+    color: #262626;
+}
+
+.client > p {
+    text-align: center;
+    font-size: 20px;
+    color: #bfbfbf;
+    margin-bottom: 44px;
+}
+
+    .client > p.cont {
+        text-indent: 2em;
+        text-align: left;
+        color: #404040;
+        margin-bottom: 0;
+        font-size: 14px;
+        line-height: 2;
+    }
+
+.teamImg p {
+    text-indent: 2em;
+    line-height: 1.6;
+}
+
+    .teamImg p.name {
+        text-align: center;
+        margin: 20px 0;
+    }
+
+.team .teamImg {
+    margin-bottom: 20px;
+}
+
+.map {
+    margin-top: 10px;
+}
+
+@media screen and (max-width:768px) {
+    .lrsection {
+        background: url(../images/aboutUS.png) no-repeat center;
+        background-size: cover;
+        padding: 60px 0 0px;
+        height: 20rem;
+        margin-bottom: 3.35rem;
+    }
+
+        .lrsection .lrPhone h2 {
+            font-size: 2.1rem;
+            margin-bottom: 1.7rem;
+        }
+
+        .lrsection .lrPhone p {
+            font-size: 1.2rem;
+            text-indent: 0 !important;
+        }
+
+    section.sectionCont {
+        margin-bottom: 3rem;
+        padding: 0 2rem;
+    }
+
+        section.sectionCont h2 {
+            font-size: 1.6rem;
+            font-weight: bold;
+        }
+
+        section.sectionCont p {
+            font-size: 1.3rem;
+            color: #999999;
+            margin-top: 0.8rem;
+            margin-bottom: 1.95rem;
+        }
+
+            section.sectionCont p.intruction {
+                color: #404040;
+                margin-top: 0;
+                margin-bottom: 4.25rem;
+            }
+
+            section.sectionCont p.name {
+                font-size: 1.4rem;
+                color: #1f1f1f;
+                margin: 2.45rem 0 1.3rem;
+            }
+
+    .team .teamImg img {
+        width: 100%;
+    }
+
+    .team .clearfix div {
+        line-height: 2;
+    }
+    #map {
+        height: 20rem;
+    }
+}

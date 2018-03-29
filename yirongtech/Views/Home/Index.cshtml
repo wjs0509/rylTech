@@ -1,0 +1,311 @@
+﻿@{
+    ViewBag.Title = "首页";
+    ViewBag.Type = "HomePage";
+}
+
+<div class="banner" id='banner'>
+    <i style="z-index: 2;"></i>
+    <b></b>
+    <canvas class="canvas01 disvisible-xs" id="Mycanvas"></canvas>
+    <div class="box-inner banner-inner content_anim1" style='z-index: 3;'>
+        <p class='banner-txt top-txt'>大数据时代</p>
+        <p class='middle-txt'>
+            专注大数据分析及解决方案
+        </p>
+        <p class='banner-txt bottom-txt'>为金融机构提供一站式专业服务</p>
+    </div>
+</div>
+
+<section class="clearfix center sectionCont qiye">
+    <h2>我们能为企业解决什么</h2>
+    <p>打造建筑企业智能化、数据化、信息化平台</p>
+    <div class="clearfix doMain">
+        <div class="doContent col-xs-12">
+            <img src="../images/face.png" alt="人脸识别" />
+            <h4>人脸识别系统</h4>
+            <p>拍照证件正反面信息</p>
+            <p>0.1秒快速识别抗人脸姿态变化干扰...</p>
+            <a href="@Url.Action("Index", "LearnMore")">了解更多&gt;</a>
+        </div>
+        <div class="doContent col-xs-12">
+            <img src="../images/qiye.png" alt="企业后台" />
+            <h4>企业后台数据</h4>
+            <p>了解整个工地工人的出入</p>
+            <p>考勤数据项目的预警、数据回查...</p>
+            <a href="@Url.Action("Index", "LearnMore")">了解更多&gt;</a>
+        </div>
+        <div class="doContent col-xs-12">
+            <img src="../images/money.png" alt="薪资代发" />
+            <h4>薪资代发</h4>
+            <p>承包商发放工人薪水</p>
+            <p>拖欠统计工人工时，繁琐复杂...</p>
+            <a href="@Url.Action("Index", "LearnMore")">了解更多&gt;</a>
+        </div>
+    </div>
+</section>
+
+<div class="lrCont">
+    <section class="center lerong">
+        <h2>乐融民工 —— 高效考勤管理</h2>
+        <p>打造建筑企业智能化、数据化、信息化平台</p>
+        <div id="threePhone">
+            <ul class="f-cb col-xs-12" style="opacity: 1;">
+                <li style="margin:20px 0;">
+                    <div class="f-cb clearfix text-center">
+                        <img class="col-xs-4" src="../images/yun.png" style="height:100px;" alt="">
+                        <dl class="col-xs-8">
+                            <dt>强大云储存功能</dt>
+                            <dd class="text-left">考勤数据实时上传考勤端，工人端数据同步，工班长、企业管理者均可实时查看工人实名档案、工人考勤记录和工资发放记录等数据。</dd>
+                        </dl>
+                    </div>
+                </li>
+                <li style="margin:20px 0;">
+                    <div class="f-cb clearfix text-center">
+                        <img class="col-xs-4" src="../images/faceOCR.png" style="height:100px;" alt="">
+                        <dl class="col-xs-8">
+                            <dt>人脸识别考勤数据</dt>
+                            <dd class="text-left">
+                                采用人脸识别考勤数据，2秒识别。准确率高达99%解决代 打卡，弄虚作假，以及手指脱皮不能正常考勤等问题。
+                            </dd>
+                        </dl>
+                    </div>
+                </li>
+                <li style="margin:20px 0;">
+                    <div class="f-cb clearfix text-center">
+                        <img class="col-xs-4" src="../images/workerAttendance.png" style="height:100px;" alt="">
+                        <dl class="col-xs-8">
+                            <dt>工人实名制考勤管理</dt>
+                            <dd class="text-left">工人上传身份证实名认证后，员工资料自动录入企业端，考勤数据实时上传云端服务器存储，对工人工时的统计准确数据。</dd>
+                        </dl>
+                    </div>
+                </li>
+                <li style="margin:20px 0;">
+                    <div class="f-cb clearfix text-center">
+                        <img class="col-xs-4" src="../images/hei.png" style="height:100px;" alt="">
+                        <dl class="col-xs-8">
+                            <dt>黑名单数据库</dt>
+                            <dd class="text-left">企业建立黑名单数据库，还可将黑名单上传至云端，与其他企业共享资源，共同营造安全用人环境，规避风险。</dd>
+                        </dl>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <div id="threeD">
+        <ul class="f-cb" style="opacity: 1;">
+            <li style="opacity: 1; top: 190px; left: -120px; width: 640px; height: 260px; z-index: 2;">
+                <div class="f-cb clearfix">
+                    <img class="fl" src="../images/yun.png" width="255" height="255" alt="">
+                    <dl class="fl">
+                        <dt style="font-size: 16px;">强大云储存功能</dt>
+                        <dd class="font16" style="font-size: 13px;">考勤数据实时上传考勤端，工人端数据同步，工班长、企业管理者均可实时查看工人实名档案、工人考勤记录和工资发放记录等数据。</dd>
+                    </dl>
+                </div>
+            </li>
+            <li style="opacity: 1; top: 160px; left: 550px; width: 720px; height: 320px; z-index: 3;">
+                <div class="f-cb clearfix">
+                    <img class="fl" src="../images/faceOCR.png" width="255" height="255" alt="">
+                    <dl class="fl">
+                        <dt style="font-size: 20px;">人脸识别考勤数据</dt>
+                        <dd class="font16" style="font-size: 16px;">
+                            采用人脸识别考勤数据，2秒识别。准确率高达99%解决代 打卡，弄虚作假，以及手指脱皮不能正常考勤等问题。
+                        </dd>
+                    </dl>
+                </div>
+            </li>
+            <li style="opacity: 1; top: 190px; left: 1300px; width: 640px; height: 260px; z-index: 2;">
+                <div class="f-cb clearfix">
+                    <img class="fl" src="../images/workerAttendance.png" width="255" height="255" alt="">
+                    <dl class="fl">
+                        <dt style="font-size: 16px;">工人实名制考勤管理</dt>
+                        <dd class="font16" style="font-size: 13px;">工人上传身份证实名认证后，员工资料自动录入企业端，考勤数据实时上传云端服务器存储，对工人工时的统计准确数据。</dd>
+                    </dl>
+                </div>
+            </li>
+            <li style="opacity: 0; top: 190px; left: 650px; width: 640px; height: 260px; z-index: 0;">
+                <div class="f-cb clearfix">
+                    <img class="fl" src="../images/hei.png" width="255" height="255" alt="">
+                    <dl class="fl">
+                        <dt style="font-size: 16px;">黑名单数据库</dt>
+                        <dd class="font16" style="font-size: 13px;">企业建立黑名单数据库，还可将黑名单上传至云端，与其他企业共享资源，共同营造安全用人环境，规避风险。</dd>
+                    </dl>
+                </div>
+            </li>
+        </ul>
+        <span id="prev" class="clickBtn hidden-sm hidden-xs"></span>
+        <span id="next" class="clickBtn hidden-sm hidden-xs"></span>
+    </div>
+
+    
+
+</div>
+
+
+<section class="center sectionCont client">
+    <h2>合作客户</h2>
+    <p>Cooperating client</p>
+    <img src="../images/bank.png" class="col-xs-12" alt="银行">
+</section>
+
+<section class="center media sectionCont">
+    <h2>媒体信息</h2>
+    <p>Media information</p>
+    <ul class="cases">
+        <li>
+            <div class="clearfix">
+                <div class="mediaImg col-xs-5 col-md-4 text-center clearfix">
+                    <img src="../images/faceAttendance.png" width="268" height="189" alt="图片">
+                </div>
+                <div class="col-xs-7 col-md-8 clearfix">
+                    <dl class="clearfix">
+                        <dt><a href="javascript:;">人脸识别考勤数据</a></dt>
+                        <dd class="date">2017-09-27 17:07:36</dd>
+                        <dd class="info">近日，义乌市政府为了规范建筑工程施工现场从业人员管理，发布了《义乌市城市管理委员会文件》，文件指出，在义乌市行政区域内从事建筑工程施工活动的建筑业企业、监理企业及其从业人员，都必须落实工地现场从业人员实名制。 众所周知，实行工地实名制管理，使总包对劳务分包人数清、情况明、人员对号、调配有序，从而促进......</dd>
+                        <dd class="f-cb hidden-xs hidden-sm">
+                            <a href="javascript:;" class="more fr">查看详情</a>
+                        </dd>
+                    </dl>
+                </div>
+            </div>
+            
+            <div class="clearfix hidden-md hidden-lg seeMore col-xs-12 text-center"><a href="javascript:;" class="more">查看详情</a></div>
+        </li>
+    </ul>
+</section>
+
+<section class="sectionCont mediaShow">
+    <ul class="clearfix">
+        <li class="col-xs-12 clearfix">
+            <a href="javascript:;" class="f-cb">
+                <em></em>
+                <span class="info fl">实名制考勤管理办法</span>
+                <span class="date fr">2017-09-25 17:06:28</span>
+            </a>
+        </li>
+        <li class="col-xs-12 clearfix">
+            <a href="javascript:;" class="f-cb">
+                <em></em>
+                <span class="info fl">实名制考勤管理办法</span>
+                <span class="date fr">2017-09-25 17:06:28</span>
+            </a>
+        </li>
+        <li class="col-xs-12 clearfix">
+            <a href="javascript:;" class="f-cb">
+                <em></em>
+                <span class="info fl">实名制考勤管理办法</span>
+                <span class="date fr">2017-09-25 17:06:28</span>
+            </a>
+        </li>
+        <li class="col-xs-12 clearfix">
+            <a href="javascript:;" class="f-cb">
+                <em></em>
+                <span class="info fl">实名制考勤管理办法</span>
+                <span class="date fr">2017-09-25 17:06:28</span>
+            </a>
+        </li>
+    </ul>
+    <a href="javascript:;" class="more font14">查看更多</a>
+</section>
+
+<script src="~/Scripts/index.js"></script>
+<script>
+
+    if (/Android|webOS|iPhone|iPod|BlackBerry/i.test(navigator.userAgent)) {
+        $("#threeD").hide();
+        $("#threePhone").show();
+        //$(".nav li a").click(function (e) {            
+        //    $(this).siblings(".subNav").toggle();
+        //})
+        
+        $("#Mycanvas").css({ width:"100%",height:"28.2rem"})
+    } else {
+        $("#threeD").show();
+        $("#threePhone").hide();
+    }
+
+    //3D轮播
+    var json = [{
+        top: '190px',
+        left: '-120px',
+        width: '640px',
+        height: '260px',
+        zIndex: 2,
+        opacity: 1,
+        fontBig: '16px',
+        fontSmall: '13px'
+    }, {
+        top: '160px',
+        left: '550px',
+        width: '720px',
+        height: '320px',
+        zIndex: 3,
+        opacity: 1,
+        fontBig: '20px',
+        fontSmall: '16px'
+    }, //最前
+    {
+        top: '190px',
+        left: '1300px',
+        width: '640px',
+        height: '260px',
+        zIndex: 2,
+        opacity: 1,
+        fontBig: '16px',
+        fontSmall: '13px'
+    }, {
+        top: '190px',
+        left: '650px',
+        width: '640px',
+        height: '260px',
+        zIndex: 0,
+        opacity: 0,
+        fontBig: '16px',
+        fontSmall: '13px'
+    }
+    ];
+    var jieliu = true;
+    //封装一个函数，将json每个数据通过遍历加在每个'li'容器上
+    function addCss() {
+        for (var i in json) {
+            $('#threeD li').eq(i).css({
+                opacity: json[i].opacity
+            });
+
+            $('#threeD li').eq(i).find('dt').animate({
+                fontSize: json[i].fontBig
+            }, 100);
+
+            $('#threeD li').eq(i).find('dd').animate({
+                fontSize: json[i].fontSmall
+            }, 100);
+
+            $('#threeD li').eq(i).animate({
+                top: json[i].top,
+                left: json[i].left,
+                width: json[i].width,
+                height: json[i].height,
+                zIndex: json[i].zIndex
+            }, 400, function () {
+                jieliu = true;
+            });
+        }
+    }
+    //页面打开先调用一次
+    $('#prev').click(function () {
+        if (jieliu == true) {
+            jieliu = false;
+            json.push(json.shift());
+            addCss();
+        }
+
+    });
+    $('#next').click(function () {
+        if (jieliu == true) {
+            jieliu = false;
+            json.unshift(json.pop());
+            addCss();
+        }
+    });
+
+    
+</script>

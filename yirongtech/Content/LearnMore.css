@@ -1,0 +1,175 @@
+﻿@media screen and (min-width: 768px) {
+    .lrCont {
+        width: 1200px;
+        margin: 0 auto;
+    }
+
+    .lrPhone {
+        width: 700px;
+        padding-top: 42px;
+        padding-left:200px;
+    }
+
+    .lrfr {
+        width: 500px;
+    }
+
+    section.sectionCont {
+        width: 1100px;
+        margin: 0 auto;
+        margin-top: 80px;
+    }
+}
+
+.fl {
+    float: left;
+}
+
+.fr {
+    float: right;
+}
+
+h2,
+p,
+ul,
+li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.lrsection {
+    color: #fff;
+    background: url("../images/learnMore.png") no-repeat;
+    background-size: cover;
+    padding: 26px 0 50px;
+}
+
+    .lrsection p {
+        font-size: 12px;
+        line-height: 2;
+    }
+
+.lrfr {
+    text-align: center;
+}
+
+.attendance {
+    margin: 48px 0;
+    font-size: 38px;
+    color: #262626;
+}
+
+.attendanceImg img {
+    width: 363px;
+    height: 277px;
+}
+
+@media screen and (min-width: 768px) {
+    .sectionCont ul li:nth-child(odd) .attendanceCont {
+        margin-left: 140px;
+        margin-right: 80px;
+    }
+
+    .sectionCont ul li:nth-child(even) .attendanceCont {
+        margin-right: 140px;
+        margin-left: 80px;
+    }
+
+    .attendanceCont {
+        padding-right: 0;
+        width: 500px;
+        display: inline-block;
+    }
+
+    .attendanceImg {
+        display: inline-block;
+        width: 363px;
+        height: 277px;
+        padding: 0;
+    }
+    .lrCont img {
+        width:290px;
+        height:200px;
+    }
+}
+
+.sectionCont ul li {
+    margin-bottom: 66px;
+}
+
+.attendanceImg {
+    text-align: center;
+}
+
+.attendanceCont h3 {
+    border-bottom: 1px solid #e0e0e0;
+    padding-bottom: 15px;
+    margin-bottom: 28px;
+}
+
+.sectionCont h4 {
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 38px;
+}
+
+.sectionCont.powerful p {
+    line-height: 2;
+}
+
+.sectionCont.powerful {
+    margin-bottom: 120px;
+}
+
+@media screen and (max-width: 768px) {
+
+    .lrsection {
+        position: relative;
+        padding: 26px 0 36px;
+    }
+    .lrCont .lrfr {
+        float:right;
+    }
+    .lrCont img {
+        width: 20rem;
+        height: 13.3rem;
+    }
+    .lrsection .lrPhone {
+        width: 20rem;
+        position: absolute;
+        top: 4rem;
+        left: 1rem;
+    }
+    .lrsection .lrPhone h2{
+        font-size:2.1rem;
+        margin-bottom:1.7rem;
+    }
+    .lrsection .lrPhone p{
+        text-indent:0!important;
+        font-size:1.2rem;
+    }
+    .attendanceSection{
+        margin-top:2rem;
+        padding:0 4rem;
+    }
+    .attendanceSection img{
+        width:18.8rem;
+        height:12.35rem;
+    }
+    .attendanceSection .attendanceCont h3{
+        font-size:1.6rem;
+        margin-top:2.25rem;
+        margin-bottom:1.65rem;
+        font-weight:600;
+        padding-bottom:1.15rem;
+    }
+        .attendanceSection .attendanceCont p {
+            font-size: 1.3rem;
+            color: #666666;
+            line-height:1.6;
+        }
+    .sectionCont ul li{
+        margin-bottom:6.1rem;
+    }
+}

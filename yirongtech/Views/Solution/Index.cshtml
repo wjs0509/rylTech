@@ -1,0 +1,101 @@
+﻿
+@{
+    ViewBag.Title = "解决方案";
+    ViewBag.Type = "SolutionPage";
+}
+
+<link rel="stylesheet" href="~/Content/solution.css">
+
+<body>
+    <section class="lrsection lrManagement">
+        <div class="lrCont clearfix">
+            <div class="fl lrPhone col-sm-12">
+                <h2>解决方案</h2>
+                <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;乐融民工考勤管理运行原理</p>
+            </div>
+        </div>
+    </section>
+
+    <div class="col-xs-12">
+        <div class="tabCheck clearfix">
+            <span class="active" id="potted">封闭式管理</span>
+            <span id="realName">实名制管理</span>
+        </div>
+    </div>
+    
+
+    <div class="potted">
+        <section class="sectionCont">
+            <h3 class="text-center sectionH3">场景展示效果图</h3>
+            <div class="sectionImg">
+                <img src="../images/changjing.png" alt="">
+            </div>
+        </section>
+
+        <section class="sectionCont">
+            <h3 class="text-center sectionH3">组合优势</h3>
+            <div class="advantage">
+                <h4 class="sectionH4">应用环境</h4>
+                <p>一直以来，由于工地施工的特殊性，工地现场考勤管理是一个难题。一些在楼宇办公使用非常好的方法在工地上不见成效，如指纹考勤、IC卡考勤，在工地实际运用中，都不尽人意。</p>
+                <p> 目前乐融智慧工地平台推出的生物特征身份识别具有唯一性和方便性的优势，工人无需额外携带或佩戴考勤识别物件，创新性的解决了工地考勤管理难的问题，在实名制进出场的运用上提供了助力。</p>
+            </div>
+            <div class="advantage">
+                <h4 class="sectionH4">技术架构</h4>
+                <div class="text-center framework sectionImg">
+                    <img src="../images/framework.png" alt="技术架构">
+                </div>
+                <p>人脸识别技术已经识别准确、动态性强、不受光照、时间、姿态、人数和脸部姿态的限制</p>
+            </div>
+            <div class="advantage">
+                <h4 class="sectionH4">应用效果</h4>
+                <div class="text-center framework sectionImg">
+                    <img src="../images/effect.png" alt="应用效果">
+                </div>
+                <p>为工地提供的人脸识别和闸机设备，技术是采用最先进的生物识别功能，0.1秒的识别速度且数据真实唯一，可以提供工地人员在场的工作时间，在场人数，对企业和项目管控精 细化从而降低工程的时间成本，设备租赁的成本。</p>
+            </div>
+        </section>
+    </div>
+
+
+    <div class="realName" style="display:none;">
+        <section class="sectionCont">
+            <h3 class="text-center sectionH3">场景展示效果图</h3>
+            <div class="sectionImg">
+                <img src="../images/changjing1.png" alt="场景展示效果图">
+            </div>
+        </section>
+
+        <section class="sectionCont">
+            <h3 class="text-center sectionH3">组合优势</h3>
+            <div class="advantage">
+                <h4 class="sectionH4">应用环境</h4>
+                <p>一直以来，由于工地施工的特殊性，工地现场考勤管理是一个难题。一些在楼宇办公使用非常好的方法在工地上不见成效，如指纹考勤、IC卡考勤，在工地实际运用中，都不尽人意。</p>
+                <p>“智慧工地”劳务管理解决方案，以进场人员发放实名制卡作为抓手，建立实名制人员管理系统，对进场人员实现了实名制登记与管理。工人进场前必须依托身份证办理实名制卡，实名制卡上存储人员相关实名制信息：如姓名、籍贯、身份证号，工种、所属单位、上岗证、合同情况、工资发放情况等，所有信息在工人进场时采集，并现场制卡。</p>
+            </div>
+            <div class="advantage">
+                <h4 class="sectionH4">操作流程</h4>
+                <div class="text-center framework">
+                    <img src="../images/operationProcess.png" alt="操作流程">
+                </div>
+                <p>在工地现场，通过身份证读取器，首先将工人的身份证信息录入该考勤系统，同时，通过工地现场的考勤备，得到工人具体的进场时间与离场时间，以及系统统计的实时工地在场人 数。并且考勤系统能够实现云端数据同步，本地考勤项目中获得数据都将导入云端。</p>
+            </div>
+        </section>
+
+    </div>
+</body>
+
+<script>
+    $("#potted").click(function() {
+        $(".tabCheck span").removeClass("active");
+        $(this).addClass("active");
+        $(".potted").show();
+        $(".realName").hide();
+    })
+    $("#realName").click(function() {
+        $(".tabCheck span").removeClass("active");
+        $(this).addClass("active");
+        $(".realName").show();
+        $(".potted").hide();
+    })
+</script>
+

@@ -1,0 +1,135 @@
+@media screen and (min-width: 768px) {
+    .lrCont {
+        width: 1200px;
+        margin: 0 auto;
+    }
+    .lrPhone {
+        width: 600px;
+        padding-left: 110px;
+    }
+    .lrfr {
+        width: 500px;
+    }
+    section.sectionCont {
+        width: 1200px;
+        margin: 0 auto;
+    }
+    .tabCheck {
+        width: 660px;
+        height: 62px;
+    }
+}
+
+.tabCheck {
+    line-height: 60px;
+    border: 1px solid #e0e0e0;
+    border-right: 0;
+    margin: 0 auto;
+    margin-bottom: 46px;
+}
+
+.tabCheck span {
+    display: inline-block;
+    width: 50%;
+    float: left;
+    text-align: center;
+    border-right: 1px solid #e0e0e0;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.tabCheck span.active {
+    color: #ff4925;
+    background-color: #f5f7fa;
+    box-shadow: 0 2px 8px 2px rgba(199, 199, 199, .35);
+}
+
+.fl {
+    float: left;
+}
+
+.fr {
+    float: right;
+}
+
+h2,
+h3,
+p,
+ul,
+li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.lrsection {
+    color: #fff;
+    background: url("../images/solution.png") no-repeat;
+    background-size: cover;
+    padding: 127px 0 50px;
+    height: 330px;
+    margin-bottom: 50px;
+}
+
+.lrPhone h2 {
+    margin-bottom: 22px;
+    font-size: 46px;
+}
+
+.lrPhone p {
+    font-size: 20px;
+}
+
+.sectionCont .sectionImg {
+    text-align: center;
+    margin-bottom: 54px;
+}
+
+.sectionH3 {
+    font-size: 20px;
+    margin-bottom: 24px;
+    font-weight: bold;
+}
+
+.sectionH4 {
+    font-size: 16px;
+    margin-bottom: 12px;
+    font-weight: bold;
+}
+
+.advantage {
+    margin-bottom: 46px;
+}
+
+.advantage p {
+    text-indent: 2em;
+    line-height: 2;
+}
+
+.advantage .framework {
+    margin-top: 36px;
+    margin-bottom: 32px;
+}
+
+@media screen and (max-width: 768px) {
+    .lrsection {
+        background: url(../images/solution.png) no-repeat center;
+        background-size: cover;
+        padding: 60px 0 0px;
+        height: 20rem;
+    }
+    .lrsection .lrPhone h2 {
+        font-size: 2.1rem;
+        margin-bottom: 1.7rem;
+    }
+
+    .lrsection .lrPhone p {
+        font-size: 1.2rem;
+    }
+    .sectionCont {
+        padding: 0 2rem;
+    }
+    .sectionCont .sectionImg img {
+        max-width: 300px;
+    }
+}

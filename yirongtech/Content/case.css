@@ -1,0 +1,85 @@
+@media screen and (min-width: 768px) {
+    .lrCont {
+        width: 1200px;
+        margin: 0 auto;
+    }
+    .lrPhone {
+        width: 600px;
+        padding-left: 110px;
+    }
+    .lrfr {
+        width: 500px;
+    }
+    section.sectionCont {
+        width: 1200px;
+        margin: 0 auto;
+    }
+}
+
+h2,
+h3,
+p,
+ul,
+li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.lrsection {
+    color: #fff;
+    background: url("../images/caseBcg.png") no-repeat;
+    background-size: cover;
+    padding: 127px 0 50px;
+    height: 330px;
+    margin-bottom: 50px;
+}
+
+section.sectionCont {
+    margin-bottom: 148px;
+}
+
+.lrPhone h2 {
+    margin-bottom: 22px;
+    font-size: 46px;
+}
+
+.lrPhone p {
+    font-size: 20px;
+}
+
+.sectionImg {
+    text-align: center;
+}
+
+.sectionImg img {
+    width: 100%;
+    height: 262px;
+}
+
+.sectionImg p {
+    text-align: left;
+    font-size: 16px;
+    margin: 20px 0 26px;
+}
+
+@media screen and (max-width: 768px) {
+    
+    .lrsection {
+        background: url(../images/caseBcg.png) no-repeat center;
+        background-size: cover;
+        padding: 60px 0 0px;
+        height:20rem;
+    }
+        .lrsection .lrPhone h2 {
+            font-size: 2.1rem;
+            margin-bottom:1.7rem;
+        }
+        .lrsection .lrPhone p {
+            font-size:1.2rem;
+        }
+        section.sectionCont {
+            margin-bottom: 3rem;
+        }
+    
+}

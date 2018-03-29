@@ -1,0 +1,100 @@
+﻿
+@{
+    ViewBag.Title = "关于我们";
+    ViewBag.Type = "AboutUsPage";
+}
+
+<link rel="stylesheet" href="~/Content/aboutUs.css">
+<style>
+    .map {
+        height: 500px;
+        width: 100%;
+    }
+</style>
+
+<body>
+    <section class="lrsection lrManagement">
+        <div class="lrCont clearfix">
+            <div class="fl lrPhone col-sm-12">
+                <h2>关于我们</h2>
+                <p style="text-indent:5em;">服务于上千万建筑工人的考勤、薪资发放管理系统</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="sectionCont client">
+        <h2>公司简介</h2>
+        <p>Company profile</p>
+        <p class="cont">深圳市前海融易乐金融服务有限公司创立于2015年。公司坐落于深圳位于中国南部海滨。专注于建筑领域信息化的研究、开发和服务。为满足国家农民工实名制的要求，针对建筑劳务领域人员流动性强、工人文化水平低、管理不规范、劳务纠纷频发等现状，研发了“工汇智慧工地”智能管理云平台。</p>
+        <p class="cont">运用了面部识别、电子支付、云计算、大数据等技术，有效提高工地现场管理水平和企业财务风险控制能力。在主管部门的支持下，已在多个省市开展试点项目，并得到了市场的热烈反应。我们的目标是成为中国建筑企业最为高效的项目管理服务商。</p>
+    </section>
+
+    <section class="sectionCont client team clearfix">
+        <h2>公司团队</h2>
+        <p>Company team</p>
+        <div class="col-md-4 teamImg">
+            <img src="../images/biguiyuan.png" alt="">
+            <p class="name">郑菁（CEO）</p>
+            <p class="intruction">国信融资集团有限公司总经理多年的建筑公司管理和海外留学经历非常敏锐的市场嗅觉和强大资源整合能力</p>
+        </div>
+        <div class="col-md-4 teamImg">
+            <img src="../images/biguiyuan.png" alt="">
+            <p class="name">余才（副总经理）</p>
+            @*<p class="intruction">国信融资集团有限公司总经理多年的建筑公司管理和海外留学经历非常敏锐的市场嗅觉和强大资源整合能力</p>*@
+        </div>
+        <div class="col-md-4 teamImg">
+            <img src="../images/biguiyuan.png" alt="">
+            <p class="name">卢贵甫（技术总监）</p>
+            @*<p class="intruction">国信融资集团有限公司总经理多年的建筑公司管理和海外留学经历非常敏锐的市场嗅觉和强大资源整合能力</p>*@
+        </div>
+    </section>
+
+    <section class="sectionCont client team">
+        <h2>联系我们</h2>
+        <p>Contact us</p>
+        <div class="clearfix">
+            <div class="col-md-3 col-xs-12">
+                <img src="../images/companyTel.png" alt="">
+                <span>联系电话：0755-26656144</span>
+            </div>
+            <div class="col-md-4 col-xs-12">
+                <img src="../images/mail.png" alt="">
+                <span>企业邮箱：hr@yirongtech.com</span>
+            </div>
+            <div class="col-md-5 col-xs-12">
+                <img src="../images/addr.png" alt="">
+                <span>地址：深圳市罗湖区深南东路桂园街道5051号金丰城A座17楼</span>
+            </div>
+        </div>
+        <div id="map" class="map"></div>
+    </section>
+</body>
+
+<script type="text/javascript" src="http://api.map.baidu.com/api?v=3.0&ak=0h6buXNPQNR9SnFcFXWt8fmLLU395Bz7"></script>
+
+<script type="text/javascript">
+
+    // 创建地图实例
+    var map = new BMap.Map("map");
+
+    // 创建点坐标
+    var point = new BMap.Point(114.115706, 22.547217);
+    var marker = new BMap.Marker(point);        // 创建标注
+    map.addOverlay(marker);
+
+    // 初始化地图，设置中心点坐标和地图级别
+    map.centerAndZoom(point, 15);
+
+    map.addControl(new BMap.NavigationControl());
+    var opts = {
+        width: 280,     // 信息窗口宽度    
+        height: 80,     // 信息窗口高度    
+        title: "深圳市前海融易乐金融服务有限公司"  // 信息窗口标题   
+    }
+    var infoWindow = new BMap.InfoWindow("地址：深圳市罗湖区深南东路桂园街道5051号金丰城A座17楼",opts);  // 创建信息窗口对象    
+    map.openInfoWindow(infoWindow, map.getCenter());      // 打开信息窗口
+
+    map.enableScrollWheelZoom();   //启用滚轮放大缩小，默认禁用
+    map.enableContinuousZoom();    //启用地图惯性拖拽，默认禁用
+</script>
+

@@ -1,0 +1,67 @@
+@media screen and (min-width: 768px) {
+    .lrCont {
+        width: 1200px;
+        margin: 0 auto;
+    }
+    .lrPhone {
+        width: 600px;
+        padding-left: 160px;
+    }
+    .lrfr {
+        width: 300px;
+        top: -58px;
+        left: 200px;
+    }
+    section.sectionCont {
+        width: 1200px;
+        margin: 0 auto;
+    }
+}
+
+h2,
+h3,
+p,
+ul,
+li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+a {
+    text-decoration: none!important;
+}
+
+.lrsection {
+    color: #1f1f1f;
+    background: url("../images/informationCenter.png") no-repeat;
+    background-size: cover;
+    padding: 117px 0 50px;
+    margin-bottom: 15px;
+}
+
+.lrPhone h2 {
+    margin-bottom: 22px;
+    font-size: 46px;
+}
+
+.lrPhone p {
+    color: #262626;
+    font-size: 20px;
+}
+
+section.sectionCont {
+    margin-top: 40px;
+}
+
+.page p {
+    margin-bottom: 18px;
+}
+
+.page span {
+    color: #a0a0a0;
+}
+
+.page a {
+    color: #0e4bd8;
+}

@@ -1,0 +1,173 @@
+@media screen and (min-width: 768px) {
+    .lrCont {
+        width: 1200px;
+        margin: 0 auto;
+    }
+    .lrPhone {
+        width: 600px;
+        padding-left: 160px;
+    }
+    .lrfr {
+        width: 300px;
+        top: -58px;
+        left: 200px;
+    }
+    section.sectionCont {
+        width: 1200px;
+        margin: 0 auto;
+    }
+}
+
+h2,
+h3,
+p,
+ul,
+li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.lrsection {
+    color: #1f1f1f;
+    background: url("../images/informationCenter.png") no-repeat;
+    background-size: cover;
+    padding: 117px 0 50px;
+    margin-bottom: 15px;
+}
+
+.lrPhone h2 {
+    margin-bottom: 22px;
+    font-size: 46px;
+}
+
+.lrPhone p {
+    color: #262626;
+    font-size: 20px;
+}
+
+@media (min-width:768px) {
+    .media li a {
+        width: 300px;
+    }
+    .media li .fl {
+        width: 900px;
+        padding-left: 5px;
+    }
+}
+
+.media li {
+    border-bottom: 1px solid #e5e5e5;
+    margin-top: 25px;
+}
+
+.media li .f-cb {
+    text-align: right;
+}
+
+.media li .fr {
+    display: inline-block;
+    width: 124px;
+    height: 42px;
+    text-align: center;
+    line-height: 42px;
+    color: #000;
+    background-color: #cccccc;
+    margin-top: 30px;
+}
+
+.media dl {
+    margin-bottom: 25px;
+}
+
+.media dl dt a {
+    font-size: 20px;
+    color: #1f1f1f;
+}
+
+    .media dl dd.tip {
+        font-size: 12px;
+        color: #737373;
+        padding: 10px 0 18px;
+        position: absolute;
+        bottom: 25px;
+    }
+
+.media dl dd.info {
+    color: #404040;
+}
+
+.mediaImg {
+    float: left;
+    display: inline-block;
+}
+
+@media screen and (max-width: 768px) {
+    .lrsection {
+        position: relative;
+        padding: 26px 0 36px;
+    }
+    .lrCont .lrfr {
+        float: right;
+    }
+
+    .lrCont img {
+        width: 14rem;
+        height: 13.3rem;
+    }
+
+    .lrsection .lrPhone {
+        width: 20rem;
+        position: absolute;
+        top: 4rem;
+        left: 1rem;
+    }
+
+        .lrsection .lrPhone h2 {
+            font-size: 2.1rem;
+            margin-bottom: 1.7rem;
+        }
+
+        .lrsection .lrPhone p {
+            text-indent: 0 !important;
+            font-size: 1.2rem;
+        }
+    /*.media dl dt a {
+        font-size: 1.4rem;
+    }*/
+    .media .cases img {
+        max-width: 100%;
+        height: 21rem;
+    }
+    .media .cases dt a {
+        display:inline-block;
+        font-size: 1.4rem;
+        color: #262626;
+        margin:1.55rem 0 0.95rem;
+    }
+    .media .cases dd.date {
+        padding: 0 0 1.8rem;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }
+    .media .cases dd.info {
+        margin-bottom:2.25rem;
+    }
+    .media .cases dd.tip {
+        position: inherit;
+        padding: 0;
+    }
+    .media li .f-cb{
+        text-align:center;
+    }
+    .media li .fr{
+        margin-top:2.25rem;
+    }
+    .media .col-xs-12.media .col-sm-12 {
+        padding: 0;
+    }
+    .sectionCont{
+        padding: 0 1.55rem;
+    }
+}

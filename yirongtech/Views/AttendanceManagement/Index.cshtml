@@ -1,0 +1,152 @@
+﻿
+@{
+    ViewBag.Title = "产品中心";
+    ViewBag.Type = "AttendanceManagementPage";
+}
+
+<link rel="stylesheet" href="~/Content/attendanceManagement.css">
+
+<body>
+    <section class="lrsection lrManagement">
+        <div class="lrCont clearfix">
+            <div class="lrPhone col-sm-7">
+                <h2>乐融考勤管理系统</h2>
+                <p>乐融民工管理平台包括乐融民工后台管理和乐融考勤管理</p>
+                <p>PC端适合企业办公使用，功能全面，可管理整个项目的考勤与工人信息</p>
+            </div>
+            <div class="lrfr col-sm-5 ipad">
+                <img src="../images/ipad.png" alt="">
+            </div>
+        </div>
+    </section>
+
+    <div class="col-xs-12">
+        <div class="tabCheck clearfix">
+            <span class="active" id="backManagement">民工后台管理</span>
+            <span id="attendanceManagement">民工考勤管理</span>
+        </div>
+    </div>
+
+    <div class="backManagement">
+        <section class="sectionCont clearfix attendanceSection">
+            <ul>
+                <li class="clearfix">
+                    <div class="fl col-xs-12 managementImg">
+                        <img src="../images/workType.png" alt="刷脸考勤">
+                    </div>
+                    <div class="fl col-xs-12 managementCont">
+                        <h3>项目工种管理</h3>
+                        <p>自主新增项目，列表管理分类，细化项目工种 为项目进度和人员管理提供数据支持 提高对项目的高效掌控</p>
+                    </div>
+                </li>
+                <li class="clearfix hidden-sm hidden-xs">
+                    <div class="fl col-xs-12 managementCont">
+                        <h3>员工／考勤管理</h3>
+                        <p>可查看工人姓名、身份证号、手机号码、劳动合同、离职状态、工人评星级、 黑名单资料等</p>
+                        <p> 智能分析考勤数据，查看工人考勤数据、出勤天数、工作时长入职等 可一键Excec考勤表</p>
+                    </div>
+                    <div class="fl col-xs-12 managementImg">
+                        <img src="../images/attendanceIcon.png" alt="刷脸考勤">
+                    </div>
+                </li>
+                <li class="clearfix hidden-md hidden-lg">
+                    <div class="fl col-xs-12 managementImg">
+                        <img src="../images/attendanceIcon.png" alt="刷脸考勤">
+                    </div>
+                    <div class="fl col-xs-12 managementCont">
+                        <h3>员工／考勤管理</h3>
+                        <p>可查看工人姓名、身份证号、手机号码、劳动合同、离职状态、工人评星级、 黑名单资料等</p>
+                        <p> 智能分析考勤数据，查看工人考勤数据、出勤天数、工作时长入职等 可一键Excec考勤表</p>
+                    </div>
+                </li>
+                <li class="clearfix">
+                    <div class="fl col-xs-12 managementImg">
+                        <img src="../images/salaryIcon.png" alt="刷脸考勤">
+                    </div>
+                    <div class="fl col-xs-12 managementCont">
+                        <h3>薪资代发管理</h3>
+                        <p>实时生成工资单，支持工资单查询、工资记录有据可查 合理分享可发展带来的利益机制，促进公司实现发展目标</p>
+                    </div>
+                </li>
+            </ul>
+        </section>
+
+        <section class="sectionCont powerful">
+            <h4>主要功能及特点：</h4>
+            <p>（一）适用场景：管理员远程云端监控工程现场；</p>
+            <p>（二）统一平台、实现信息同步、分布式管理，满足异地考勤需求；</p>
+            <p>（三）支持工地人员配置化管理，实时统计项目考勤生成可下载报表；</p>
+            <p>（四）考勤数据实时同步，管理员随查随看、实现远程管控工地现场；</p>
+            <p>（五）项目人员的培训管理、合同管理，实现项目人员资料的高效管理</p>
+        </section>
+    </div>
+
+    <div class="attendanceManagement" style="display:none;">
+        <section class="sectionCont clearfix attendanceSection">
+            <ul>
+                <li class="clearfix">
+                    <div class="fl col-xs-12 managementImg">
+                        <img src="../images/pingtaiIcon.png" alt="项目监管平台">
+                    </div>
+                    <div class="fl col-xs-12 managementCont">
+                        <h3>项目监管平台</h3>
+                        <p>提供建筑企业的项目现场数据、考勤统计、项目进度</p>
+                    </div>
+                </li>
+                <li class="clearfix hidden-sm hidden-xs">
+                    <div class="fl col-xs-12 managementCont">
+                        <h3>员工管理</h3>
+                        <p>员工填写个人资料完成实名认证。加入考勤组，工人资料自动录入考勤端，考勤 数据实时上传云端服务器存储管理者均可实时查看工人实名档案、工人考勤记录等数据</p>
+                    </div>
+                    <div class="fl col-xs-12 managementImg">
+                        <img src="../images/workerIcon.png" alt="员工">
+                    </div>
+                </li>
+                <li class="clearfix hidden-md hidden-lg">
+                    <div class="fl col-xs-12 managementImg">
+                        <img src="../images/workerIcon.png" alt="员工">
+                    </div>
+                    <div class="fl col-xs-12 managementCont">
+                        <h3>员工管理</h3>
+                        <p>员工填写个人资料完成实名认证。加入考勤组，工人资料自动录入考勤端，考勤 数据实时上传云端服务器存储管理者均可实时查看工人实名档案、工人考勤记录等数据</p>
+                    </div>
+                </li>
+                <li class="clearfix">
+                    <div class="fl col-xs-12 managementImg">
+                        <img src="../images/attendanceIcon.png" alt="考勤">
+                    </div>
+                    <div class="fl col-xs-12 managementCont">
+                        <h3>考勤管理</h3>
+                        <p>管理员查看员工考勤记录、考勤日、月报表、统计报表、补打卡、请假管理等 数据，解决不能实时工人现场出勤情况</p>
+                    </div>
+                </li>
+            </ul>
+        </section>
+
+        <section class="sectionCont powerful">
+            <h4>主要功能及特点：</h4>
+            <p>（一）适用场景：管理员远程云端监控工程现场；</p>
+            <p>（二）统一平台、实现信息同步、分布式管理，满足异地考勤需求；</p>
+            <p>（三）支持工地人员配置化管理，实时统计项目考勤生成可下载报表；</p>
+            <p>（四）考勤数据实时同步，管理员随查随看、实现远程管控工地现场；</p>
+            <p>（五）项目人员的培训管理、合同管理，实现项目人员资料的高效管理</p>
+        </section>
+    </div>
+
+</body>
+
+<script>
+    $("#backManagement").click(function () {
+        $(".tabCheck span").removeClass("active");
+        $(this).addClass("active");
+        $(".backManagement").show();
+        $(".attendanceManagement").hide();
+    })
+    $("#attendanceManagement").click(function () {
+        $(".tabCheck span").removeClass("active");
+        $(this).addClass("active");
+        $(".attendanceManagement").show();
+        $(".backManagement").hide();
+    })
+</script>
+

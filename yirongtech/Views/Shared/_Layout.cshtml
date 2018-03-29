@@ -1,0 +1,41 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="~/Content/bootstrap.min.css">
+    <link rel="stylesheet" href="~/Content/index.css">
+    <script src="~/Scripts/jquery-1.10.2.min.js" charset="utf-8"></script>
+    <script src="~/Scripts/bootstrap.min.js"></script>
+    <title>融易乐金服</title>
+</head>
+
+<body>
+    @Html.Partial("_Header")  
+
+    <div>
+        @RenderBody()
+    </div>
+
+    @Html.Partial("_Footer")
+
+</body>
+
+</html>
+
+<script>
+    var menu = $(".nav.navbar-nav").attr("data-menu");
+    for (var i = 0; i < $(".nav.navbar-nav li").length; i++) {
+        if ($(".nav.navbar-nav li").eq(i).attr("id") == menu) {
+            if ($(".nav.navbar-nav li").eq(i).parent("ul").hasClass("treeview-menu")) {
+                $(".nav.navbar-nav li").eq(i).parent("ul").parents("li").addClass("liActive");
+                $(".nav.navbar-nav li").eq(i).parents(".subNav").css("display", "block");
+                $(".nav.navbar-nav li").eq(i).addClass("active");
+            } else {
+                $(".nav.navbar-nav li").eq(i).addClass("liActive");
+            }
+        }
+    }
+</script>
